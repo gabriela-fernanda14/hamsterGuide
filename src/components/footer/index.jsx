@@ -18,7 +18,7 @@ const Footer = () => {
 
         <div className={styles.bottom}>
           <p className={styles.copyright}>
-            © 2024 hamsterGuide. Todos os direitos reservados.
+            © 2025 hamsterGuide. Todos os direitos reservados.
           </p>
           <p className={styles.madeWith}>
             Feito com ❤️ para amantes de hamsters 🐹

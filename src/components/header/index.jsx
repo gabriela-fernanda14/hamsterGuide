@@ -17,13 +17,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/cuidados" className={styles.navLink}>
-                Cuidados
+              <Link href="/especies" className={styles.navLink}>
+                Espécies
               </Link>
             </li>
             <li>
-              <Link href="/alimentacao" className={styles.navLink}>
-                Alimentação
+              <Link href="/cuidados" className={styles.navLink}>
+                Cuidados
               </Link>
             </li>
             <li>
@@ -32,8 +32,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/saude" className={styles.navLink}>
-                Saúde
+              <Link href="/dicas" className={styles.navLink}>
+                Dicas
               </Link>
             </li>
           </ul>
