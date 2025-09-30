@@ -1,5 +1,5 @@
 .hero {
-  background-color: #f5f3f0;
+  background-color: var(--off-white);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -21,14 +21,14 @@
 
 .title {
   font-size: 3rem;
-  color: #5d4037;
+  color: var(--brown-dark);
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #8d6e63;
+  color: var(--brown-medium);
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -39,7 +39,7 @@
 }
 
 .btnPrimary {
-  background-color: #8d6e63;
+  background-color: var(--brown-medium);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -49,13 +49,13 @@
 }
 
 .btnPrimary:hover {
-  background-color: #6d4c41;
+  background-color: var(--brown-dark);
 }
 
 .btnSecondary {
   background-color: transparent;
-  color: #8d6e63;
-  border: 2px solid #8d6e63;
+  color: var(--brown-medium);
+  border: 2px solid var(--brown-medium);
   padding: 10px 22px;
   font-size: 1rem;
   border-radius: 6px;
@@ -63,20 +63,20 @@
 }
 
 .btnSecondary:hover {
-  background-color: #8d6e63;
+  background-color: var(--brown-medium);
   color: white;
 }
 
 .imagePlaceholder {
   width: 300px;
   height: 300px;
-  background-color: #efebe9;
+  background-color: var(--cream);
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 8rem;
-  border: 3px solid #d7ccc8;
+  border: 3px solid var(--brown-light);
   overflow: hidden;
 }
 
@@ -85,6 +85,142 @@
   object-fit: cover;
 }
 
+/* Container geral */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Seção de Tópicos */
+.topicsSection {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--brown-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.topicsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.topicCard {
+  background-color: var(--cream);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid var(--brown-light);
+}
+
+.topicIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.topicTitle {
+  font-size: 1.5rem;
+  color: var(--brown-dark);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.topicDescription {
+  color: var(--brown-medium);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.topicButton {
+  background-color: var(--brown-medium);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.topicButton:hover {
+  background-color: var(--brown-dark);
+}
+
+/* Seção de Contato */
+.contactSection {
+  background-color: var(--off-white);
+  padding: 4rem 0;
+}
+
+.contactDescription {
+  text-align: center;
+  color: var(--brown-medium);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  color: var(--brown-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--brown-light);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: white;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--brown-medium);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formButton {
+  background-color: var(--brown-medium);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.formButton:hover {
+  background-color: var(--brown-dark);
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -110,5 +246,17 @@
     width: 250px;
     height: 250px;
     font-size: 6rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .topicsGrid {
+    grid-template-columns: 1fr;
   }
 }
