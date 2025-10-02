@@ -46,10 +46,14 @@
   font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .btnPrimary:hover {
   background-color: var(--brown-dark);
+  transform: translateY(-2px);
 }
 
 .btnSecondary {
@@ -60,11 +64,15 @@
   font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .btnSecondary:hover {
   background-color: var(--brown-medium);
   color: white;
+  transform: translateY(-2px);
 }
 
 .imagePlaceholder {
@@ -147,10 +155,14 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .topicButton:hover {
   background-color: var(--brown-dark);
+  transform: translateY(-2px);
 }
 
 /* Seção de Contato */

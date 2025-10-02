@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useForm, ValidationError } from "@formspree/react";
 import styles from "./page.module.css";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xgvnwwyn");
+  const [state, handleSubmit] = useForm("xdkwzeoa");
   if (state.succeeded) {
     return (
       <div className={styles.successMessage}>
@@ -75,8 +76,12 @@ export default function Home() {
             amigo
           </p>
           <div className={styles.buttons}>
-            <button className={styles.btnPrimary}>Ver espécies</button>
-            <button className={styles.btnSecondary}>Ver cuidados</button>
+            <Link href="/especies" className={styles.btnPrimary}>
+              Ver espécies
+            </Link>
+            <Link href="/cuidados" className={styles.btnSecondary}>
+              Ver cuidados
+            </Link>
           </div>
         </div>
         <div className={styles.heroRight}>
@@ -103,7 +108,9 @@ export default function Home() {
                 Aprenda sobre a dieta ideal, alimentos permitidos e proibidos
                 para seu hamster.
               </p>
-              <button className={styles.topicButton}>Ver Alimentação</button>
+              <Link href="/cuidados" className={styles.topicButton}>
+                Ver Alimentação
+              </Link>
             </div>
             <div className={styles.topicCard}>
               <div className={styles.topicIcon}>🏠</div>
@@ -112,7 +119,9 @@ export default function Home() {
                 Descubra como montar a gaiola perfeita e criar um ambiente
                 confortável.
               </p>
-              <button className={styles.topicButton}>Ver Habitat</button>
+              <Link href="/habitat" className={styles.topicButton}>
+                Ver Habitat
+              </Link>
             </div>
           </div>
         </div>
