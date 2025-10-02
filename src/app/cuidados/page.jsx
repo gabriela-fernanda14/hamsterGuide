@@ -82,6 +82,45 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            <section id="alimentacao" className={styles.detailSection}>
+                <div className={styles.container}>
+                    <div className={styles.detailContent}>
+                        <div className={styles.detailText}>
+                            <h2 className={styles.detailTitle}>Alimentação Adequada</h2>
+                            <p className={styles.detailDescription}>
+                                Hamsters precisam de uma dieta balanceada composta por ração específica para hamsters, que contém os nutrientes necessários para seu desenvolvimento. Complementar com pequenas porções de frutas frescas, legumes e sementes é importante, mas evite alimentos ricos em açúcar, gordura ou tóxicos, como cebola e chocolate. Sempre ofereça água fresca e limpa diariamente.
+                            </p>
+                            
+                            <h3>O que oferecer:</h3>
+                            <ul>
+                                <li>Ração específica para hamsters (70% da dieta)</li>
+                                <li>Vegetais frescos: cenoura, brócolis, abobrinha</li>
+                                <li>Frutas em pequenas quantidades: maçã, pera</li>
+                                <li>Sementes e nozes ocasionalmente</li>
+                            </ul>
+
+                            <h3>Frequência de alimentação:</h3>
+                            <ul>
+                                <li>Ração: Diariamente (1-2 colheres de chá)</li>
+                                <li>Vegetais: 2-3 vezes por semana</li>
+                                <li>Frutas: 1-2 vezes por semana</li>
+                            </ul>
+
+                            <h3>Alimentos proibidos:</h3>
+                            <div className={styles.forbiddenFoods}>
+                                <span>Chocolate</span>
+                                <span>Cebola e alho</span>
+                                <span>Doces</span>
+                                <span>Café</span>
+                                <span>Abacate</span>
+                                <span>Carnes cruas</span>
+                            </div>
+                        </div>
+                        <div className={styles.detailImagePlaceholder}></div>
+                    </div>
+                </div>
+            </section>
+
 
         </main>
     );

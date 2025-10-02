@@ -117,3 +117,82 @@
     background-color: var(--brown-dark);
 }
 
+/* ========== SEÇÕES DETALHADAS ========== */
+.detailSection {
+    padding: 4rem 0;
+}
+
+.detailSection:nth-child(3) {
+    background-color: var(--cream);
+}
+
+.detailSection:nth-child(4) {
+    background-color: var(--brown-light);
+}
+
+.detailSection:nth-child(5) {
+    background-color: var(--cream);
+}
+
+.detailContent {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.detailText {
+    width: 60%;
+}
+
+.detailImagePlaceholder {
+    width: 300px;
+    height: 200px;
+    background-color: var(--brown-medium);
+    border-radius: 15px;
+    border: 3px solid var(--brown-dark);
+}
+
+.detailTitle {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.detailDescription {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.detailText h3 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+    font-weight: bold;
+}
+
+.detailText ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.detailText li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.forbiddenFoods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.forbiddenFoods span {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
