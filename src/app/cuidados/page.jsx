@@ -233,6 +233,47 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            {/* 7. Timeline: Rotina de Cuidados Diários */}
+            <section className={styles.timelineSection}>
+                <div className={styles.container}>
+                    <h2 className={styles.sectionTitle}>Rotina de Cuidados Diários</h2>
+                    <div className={styles.timeline}>
+                        <div className={styles.timelineItem}>
+                            <div className={`${styles.timelineIcon} ${styles.morning}`}>🌅</div>
+                            <div className={styles.timelineContent}>
+                                <h3>Manhã</h3>
+                                <p>Verificar água e comida. Observar comportamento geral do hamster.</p>
+                            </div>
+                        </div>
+                        
+                        <div className={styles.timelineItem}>
+                            <div className={`${styles.timelineIcon} ${styles.afternoon}`}>☀️</div>
+                            <div className={styles.timelineContent}>
+                                <h3>Tarde</h3>
+                                <p>Tempo de interação e brincadeiras. Deixe seu hamster explorar fora da gaiola (supervisionado).</p>
+                            </div>
+                        </div>
+                        
+                        <div className={styles.timelineItem}>
+                            <div className={`${styles.timelineIcon} ${styles.evening}`}>🌙</div>
+                            <div className={styles.timelineContent}>
+                                <h3>Noite</h3>
+                                <p>Alimentação principal e exercícios. Hamsters são mais ativos no período noturno.</p>
+                            </div>
+                        </div>
+                        
+                        <div className={styles.timelineItem}>
+                            <div className={`${styles.timelineIcon} ${styles.night}`}>🌃</div>
+                            <div className={styles.timelineContent}>
+                                <h3>Antes de dormir</h3>
+                                <p>Verificação geral final. Certifique-se de que tem água fresca para a noite.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
         </main>
     );
