@@ -1,0 +1,74 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+    padding: 2rem;
+}
+
+.content {
+    text-align: center;
+    max-width: 500px;
+}
+
+.hamster {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    animation: wiggle 2s ease-in-out infinite;
+}
+
+.message {
+    color: #d32f2f;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+.homeLink {
+    background-color: var(--brown-medium);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.homeLink:hover {
+    background-color: var(--brown-dark);
+    transform: translateY(-2px);
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hamster {
+        font-size: 4rem;
+    }
+
+    .message {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
