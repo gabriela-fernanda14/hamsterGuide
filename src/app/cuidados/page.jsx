@@ -29,7 +29,7 @@ export default function Cuidados() {
 
     return (
         <main>
-
+            {/* 1. Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
                     <h1 className={styles.heroTitle}>Cuidados Básicos Diários</h1>
@@ -40,6 +40,7 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            {/* 2. Cards dos 4 Pilares Principais */}
             <section className={styles.pilaresSection}>
                 <div className={styles.container}>
                     <h2 className={styles.sectionTitle}>4 Pilares dos Cuidados</h2>
@@ -83,6 +84,7 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            {/* 3. Seção Detalhada: Alimentação */}
             <section id="alimentacao" className={styles.detailSection}>
                 <div className={styles.container}>
                     <div className={styles.detailContent}>
@@ -122,6 +124,7 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            {/* 4. Seção Detalhada: Higiene */}
             <section id="higiene" className={styles.detailSection}>
                 <div className={styles.container}>
                     <div className={styles.detailContent}>
@@ -153,6 +156,7 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            {/* 5. Seção Detalhada: Cuidados de Saúde */}
             <section id="saude" className={styles.detailSection}>
                 <div className={styles.container}>
                     <div className={styles.detailContent}>
@@ -192,6 +196,43 @@ export default function Cuidados() {
                     </div>
                 </div>
             </section>
+
+            {/* 6. Seção DESTAQUE: Sinais de Alerta */}
+            <section className={styles.alertSection}>
+                <div className={styles.container}>
+                    <h2 className={styles.alertTitle}>Sinais de Alerta</h2>
+                    <p className={styles.alertSubtitle}>
+                        Fique atento a sinais como perda de peso, dificuldade para respirar, olhos lacrimejantes ou feridas na pele. Esses sintomas indicam a necessidade de atendimento veterinário imediato para evitar complicações.
+                    </p>
+                    <div className={styles.alertGrid}>
+                        <div className={styles.alertItem}>
+                            <h4>Perda de peso</h4>
+                            <p>Monitore regularmente o peso do seu hamster. Perda súbita pode indicar problemas de saúde.</p>
+                        </div>
+                        <div className={styles.alertItem}>
+                            <h4>Diarreia</h4>
+                            <p>Fezes muito líquidas ou frequentes podem indicar problemas digestivos ou infecções.</p>
+                        </div>
+                        <div className={styles.alertItem}>
+                            <h4>Dificuldade para respirar</h4>
+                            <p>Respiração ofegante ou chiados podem ser sinais de infecções respiratórias.</p>
+                        </div>
+                        <div className={styles.alertItem}>
+                            <h4>Olhos lacrimejantes</h4>
+                            <p>Secreções nos olhos podem indicar alergias ou infecções oculares.</p>
+                        </div>
+                        <div className={styles.alertItem}>
+                            <h4>Feridas na pele</h4>
+                            <p>Cortes, arranhões ou inflamações precisam de atenção veterinária imediata.</p>
+                        </div>
+                        <div className={styles.alertItem}>
+                            <h4>Letargia</h4>
+                            <p>Falta de energia ou movimento reduzido pode indicar diversos problemas de saúde.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
         </main>
     );
