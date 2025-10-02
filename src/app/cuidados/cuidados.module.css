@@ -41,3 +41,79 @@
     border: 2px solid var(--brown-medium);
 }
 
+/* ========== CARDS DOS 4 PILARES ========== */
+.pilaresSection {
+    background-color: var(--brown-light);
+    padding: 4rem 0;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    color: var(--brown-dark);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.pilaresGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.pilarCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: calc(50% - 1rem);
+    min-width: 280px;
+}
+
+.pilarCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardIconPlaceholder {
+    width: 80px;
+    height: 80px;
+    background-color: var(--cream);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 3px solid var(--brown-light);
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    color: var(--brown-dark);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.cardDescription {
+    color: var(--brown-medium);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.cardButton {
+    background-color: var(--brown-medium);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cardButton:hover {
+    background-color: var(--brown-dark);
+}
+
