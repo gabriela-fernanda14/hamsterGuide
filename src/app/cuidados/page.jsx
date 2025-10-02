@@ -29,6 +29,7 @@ export default function Cuidados() {
 
     return (
         <main>
+
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
                     <h1 className={styles.heroTitle}>Cuidados Básicos Diários</h1>
@@ -148,6 +149,46 @@ export default function Cuidados() {
                                 <li>Retire após o uso para evitar sujeira</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="saude" className={styles.detailSection}>
+                <div className={styles.container}>
+                    <div className={styles.detailContent}>
+                        <div className={styles.detailText}>
+                            <h2 className={styles.detailTitle}>Cuidados de Saúde</h2>
+                            <p className={styles.detailDescription}>
+                                Observe o hamster diariamente para detectar qualquer sinal de doença, como mudanças no apetite, letargia, espirros ou pelos arrepiados. Consulte um veterinário especializado em animais pequenos ao notar qualquer alteração. Mantenha o ambiente limpo e livre de correntes de ar para minimizar o risco de doenças.
+                            </p>
+
+                            <h3>Visitas ao veterinário:</h3>
+                            <ul>
+                                <li>Check-up anual para hamsters jovens</li>
+                                <li>Check-up semestral para hamsters idosos</li>
+                                <li>Consulta imediata se houver sintomas</li>
+                                <li>Vacinação conforme orientação veterinária</li>
+                            </ul>
+
+                            <h3>Verificações regulares em casa:</h3>
+                            <ul>
+                                <li>Verificar dentes (crescimento excessivo)</li>
+                                <li>Controlar o peso semanalmente</li>
+                                <li>Observar o pelo (brilho e textura)</li>
+                                <li>Verificar olhos e nariz (secreções)</li>
+                                <li>Monitorar atividade e comportamento</li>
+                            </ul>
+
+                            <h3>Cuidados preventivos:</h3>
+                            <ul>
+                                <li>Ambiente livre de correntes de ar</li>
+                                <li>Temperatura entre 18-24°C</li>
+                                <li>Exercício diário adequado</li>
+                                <li>Alimentação balanceada</li>
+                                <li>Higiene rigorosa da gaiola</li>
+                            </ul>
+                        </div>
+                        <div className={styles.detailImagePlaceholder}></div>
                     </div>
                 </div>
             </section>
