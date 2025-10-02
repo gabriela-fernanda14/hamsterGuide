@@ -41,7 +41,6 @@
     border: 2px solid var(--brown-medium);
 }
 
-/* ========== CARDS DOS 4 PILARES ========== */
 .pilaresSection {
     background-color: var(--brown-light);
     padding: 4rem 0;
@@ -117,7 +116,6 @@
     background-color: var(--brown-dark);
 }
 
-/* ========== SEÇÕES DETALHADAS ========== */
 .detailSection {
     padding: 4rem 0;
 }
@@ -196,7 +194,6 @@
     font-weight: 600;
 }
 
-/* ========== SEÇÃO DE ALERTA ========== */
 .alertSection {
     background-color: #fff3e0;
     padding: 4rem 0;
@@ -248,9 +245,8 @@
     line-height: 1.5;
 }
 
-/* ========== TIMELINE DE ROTINA ========== */
 .timelineSection {
-    background-color: var(--cream);
+    background-color: var(--brown-light);
     padding: 4rem 0;
 }
 
@@ -334,3 +330,54 @@
     color: var(--brown-medium);
     line-height: 1.6;
 }
+
+.ctaSection {
+    background-color: var(--cream);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.ctaContent h2 {
+    color: var(--brown-dark);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaButton,
+.ctaButtonSecondary {
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.ctaButton {
+    background-color: var(--brown-medium);
+    color: var(--cream);
+}
+
+.ctaButton:hover {
+    background-color: var(--brown-dark);
+    transform: translateY(-2px);
+}
+
+.ctaButtonSecondary {
+    background-color: transparent;
+    color: var(--brown);
+    border: 2px solid white;
+}
+
+.ctaButtonSecondary:hover {
+    background-color: white;
+    color: var(--brown-dark);
+}
+

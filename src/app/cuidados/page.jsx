@@ -29,7 +29,6 @@ export default function Cuidados() {
 
     return (
         <main>
-            {/* 1. Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
                     <h1 className={styles.heroTitle}>Cuidados Básicos Diários</h1>
@@ -40,7 +39,6 @@ export default function Cuidados() {
                 </div>
             </section>
 
-            {/* 2. Cards dos 4 Pilares Principais */}
             <section className={styles.pilaresSection}>
                 <div className={styles.container}>
                     <h2 className={styles.sectionTitle}>4 Pilares dos Cuidados</h2>
@@ -84,7 +82,6 @@ export default function Cuidados() {
                 </div>
             </section>
 
-            {/* 3. Seção Detalhada: Alimentação */}
             <section id="alimentacao" className={styles.detailSection}>
                 <div className={styles.container}>
                     <div className={styles.detailContent}>
@@ -124,7 +121,6 @@ export default function Cuidados() {
                 </div>
             </section>
 
-            {/* 4. Seção Detalhada: Higiene */}
             <section id="higiene" className={styles.detailSection}>
                 <div className={styles.container}>
                     <div className={styles.detailContent}>
@@ -156,7 +152,6 @@ export default function Cuidados() {
                 </div>
             </section>
 
-            {/* 5. Seção Detalhada: Cuidados de Saúde */}
             <section id="saude" className={styles.detailSection}>
                 <div className={styles.container}>
                     <div className={styles.detailContent}>
@@ -197,7 +192,6 @@ export default function Cuidados() {
                 </div>
             </section>
 
-            {/* 6. Seção DESTAQUE: Sinais de Alerta */}
             <section className={styles.alertSection}>
                 <div className={styles.container}>
                     <h2 className={styles.alertTitle}>Sinais de Alerta</h2>
@@ -233,7 +227,7 @@ export default function Cuidados() {
                 </div>
             </section>
 
-            {/* 7. Timeline: Rotina de Cuidados Diários */}
+
             <section className={styles.timelineSection}>
                 <div className={styles.container}>
                     <h2 className={styles.sectionTitle}>Rotina de Cuidados Diários</h2>
@@ -273,6 +267,17 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            <section className={styles.ctaSection}>
+                <div className={styles.container}>
+                    <div className={styles.ctaContent}>
+                        <h2>Ainda tem dúvidas sobre cuidados?</h2>
+                        <div className={styles.ctaButtons}>
+                            <a href="/dicas" className={styles.ctaButton}>Ver Dicas</a>
+                            <a href="/habitat" className={styles.ctaButtonSecondary}>Conheça o habitat ideal</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
         </main>
