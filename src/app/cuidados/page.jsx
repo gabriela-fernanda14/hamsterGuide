@@ -121,6 +121,36 @@ export default function Cuidados() {
                 </div>
             </section>
 
+            <section id="higiene" className={styles.detailSection}>
+                <div className={styles.container}>
+                    <div className={styles.detailContent}>
+                        <div className={styles.detailImagePlaceholder}></div>
+                        <div className={styles.detailText}>
+                            <h2 className={styles.detailTitle}>Higiene</h2>
+                            <p className={styles.detailDescription}>
+                                Mantenha a gaiola limpa trocando a cama pelo menos uma vez por semana e retirando restos de alimentos diariamente. Hamsters gostam de tomar banho de areia especial para remover impurezas da pele e pelos, o que ajuda a evitar infecções. Evite banhos com água, pois podem estressar e causar problemas respiratórios.
+                            </p>
+                            
+                            <h3>Limpeza da gaiola:</h3>
+                            <ul>
+                                <li>Limpeza completa: semanalmente</li>
+                                <li>Remoção de restos de comida: diariamente</li>
+                                <li>Troca do substrato: a cada 3-4 dias</li>
+                                <li>Limpeza do bebedouro: a cada 2 dias</li>
+                                <li>Desinfeção mensal com produtos específicos</li>
+                            </ul>
+
+                            <h3>Banho de areia:</h3>
+                            <ul>
+                                <li>Ofereça 2-3 vezes por semana</li>
+                                <li>Use areia específica para chinchilas</li>
+                                <li>Deixe por 10-15 minutos</li>
+                                <li>Retire após o uso para evitar sujeira</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
     );
