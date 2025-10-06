@@ -102,17 +102,6 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Principais Tópicos</h2>
           <div className={styles.topicsGrid}>
             <div className={styles.topicCard}>
-              <div className={styles.topicIcon}>🥕</div>
-              <h3 className={styles.topicTitle}>Alimentação</h3>
-              <p className={styles.topicDescription}>
-                Aprenda sobre a dieta ideal, alimentos permitidos e proibidos
-                para seu hamster.
-              </p>
-              <Link href="/cuidados" className={styles.topicButton}>
-                Ver Alimentação
-              </Link>
-            </div>
-            <div className={styles.topicCard}>
               <div className={styles.topicIcon}>🏠</div>
               <h3 className={styles.topicTitle}>Habitat</h3>
               <p className={styles.topicDescription}>
@@ -121,6 +110,17 @@ export default function Home() {
               </p>
               <Link href="/habitat" className={styles.topicButton}>
                 Ver Habitat
+              </Link>
+            </div>
+            <div className={styles.topicCard}>
+              <div className={styles.topicIcon}>💡</div>
+              <h3 className={styles.topicTitle}>Dicas</h3>
+              <p className={styles.topicDescription}>
+                Dicas práticas e importantes para o cuidado diário do seu
+                hamster.
+              </p>
+              <Link href="/dicas" className={styles.topicButton}>
+                Ver Dicas
               </Link>
             </div>
           </div>
