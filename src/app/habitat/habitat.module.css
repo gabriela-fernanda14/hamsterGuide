@@ -1,0 +1,285 @@
+:root {
+  --brown-dark: #5c3a21;
+  --brown-medium: #8b5a3c;
+  --brown-light: #d4a574;
+  --cream: #f5e6d3;
+  --off-white: #faf7f2;
+}
+
+.hero {
+  background-color: var(--cream);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  color: var(--brown-dark);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  color: var(--brown-medium);
+  line-height: 1.6;
+}
+
+.topicsSection {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--brown-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.topicsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.topicCard {
+  background-color: var(--cream);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid var(--brown-light);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.topicCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(139, 69, 19, 0.15);
+  border-color: var(--brown-medium);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  color: var(--brown-dark);
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.cardDescription {
+  color: var(--brown-medium);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contentSection {
+  padding: 3rem 0;
+  background-color: var(--off-white);
+}
+
+.contentSection:nth-child(even) {
+  background-color: white;
+}
+
+.contentTitle {
+  font-size: 2rem;
+  color: var(--brown-dark);
+  margin-bottom: 2rem;
+  font-weight: bold;
+  border-bottom: 3px solid var(--brown-light);
+  padding-bottom: 0.5rem;
+}
+
+.contentSection h3 {
+  font-size: 1.5rem;
+  color: var(--brown-dark);
+  margin: 2rem 0 1rem 0;
+  font-weight: 600;
+}
+
+.contentSection p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--brown-medium);
+  margin-bottom: 1.5rem;
+}
+
+.contentSection ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.contentSection li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--brown-medium);
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.contentSection li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--brown-dark);
+  font-weight: bold;
+}
+
+.contentSection strong {
+  color: var(--brown-dark);
+  font-weight: 600;
+}
+
+.importantBox {
+  background-color: #fff9e6;
+  border-left: 4px solid var(--brown-medium);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.importantBox h4 {
+  color: var(--brown-dark);
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.importantBox p {
+  margin: 0;
+  color: var(--brown-medium);
+  line-height: 1.7;
+}
+
+.importantBox ul {
+  margin: 1rem 0 0 0;
+}
+
+.importantBox li {
+  margin-bottom: 0.6rem;
+}
+
+.finalSection {
+  background-color: var(--cream);
+  padding: 4rem 0;
+}
+
+.finalSection p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--brown-medium);
+  margin-bottom: 1.5rem;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--brown-medium);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.backToTop:hover {
+  background-color: var(--brown-dark);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .topicsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contentTitle {
+    font-size: 1.8rem;
+  }
+
+  .contentSection h3 {
+    font-size: 1.3rem;
+  }
+
+  .contentSection p,
+  .contentSection li {
+    font-size: 1rem;
+  }
+
+  .backToTop {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .topicCard {
+    padding: 1.5rem;
+  }
+
+  .contentSection {
+    padding: 2rem 0;
+  }
+
+  .importantBox {
+    padding: 1.2rem;
+  }
+}
