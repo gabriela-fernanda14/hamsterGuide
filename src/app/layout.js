@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Hamster Guide",
-  description: "Guia para cuidado de hamsters",
+  description: "Guia completo para cuidado de hamsters",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
