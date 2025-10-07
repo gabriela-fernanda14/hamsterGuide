@@ -1,0 +1,373 @@
+.hero {
+  background-color: var(--cream);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  color: var(--brown-dark);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  color: var(--brown-medium);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--brown-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.dicasSection {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.dicasGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dicaCard {
+  background-color: var(--off-white);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid var(--brown-light);
+  transition: all 0.3s ease;
+}
+
+.dicaCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(139, 69, 19, 0.12);
+  border-color: var(--brown-medium);
+}
+
+.dicaCard h3 {
+  font-size: 1.4rem;
+  color: var(--brown-dark);
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.dicaCard p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--brown-medium);
+  margin: 0;
+}
+
+.faqSection {
+  background-color: var(--off-white);
+  padding: 4rem 0;
+}
+
+.categoriaSection {
+  margin-bottom: 3rem;
+}
+
+.categoriaTitle {
+  font-size: 2rem;
+  color: var(--brown-dark);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--brown-light);
+  font-weight: 600;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqItem {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--brown-light);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.faqItem:hover {
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.1);
+}
+
+.faqQuestion {
+  padding: 1.5rem;
+  cursor: pointer;
+  font-size: 1.15rem;
+  color: var(--brown-dark);
+  font-weight: 600;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqQuestion::marker {
+  display: none;
+}
+
+.faqQuestion::before {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--brown-medium);
+  margin-right: 1rem;
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
+
+details[open] .faqQuestion::before {
+  content: '−';
+}
+
+details[open] .faqQuestion {
+  background-color: var(--cream);
+}
+
+.faqQuestion:hover {
+  background-color: var(--off-white);
+}
+
+.faqAnswer {
+  padding: 1.5rem;
+  background-color: var(--off-white);
+  border-top: 1px solid var(--brown-light);
+}
+
+.faqAnswer p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--brown-medium);
+  margin: 0;
+}
+
+.emergencySection {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.emergencyBox {
+  background-color: #fff3e0;
+  border: 3px solid #ff6b35;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.emergencyBox h2 {
+  font-size: 2rem;
+  color: #d84315;
+  margin: 0 0 1.5rem 0;
+  font-weight: bold;
+}
+
+.emergencyBox p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5d4037;
+  margin-bottom: 1rem;
+}
+
+.emergencyBox p:last-child {
+  margin-bottom: 0;
+}
+
+.emergencyBox strong {
+  color: #bf360c;
+  font-weight: 600;
+}
+
+.contactSection {
+  background-color: var(--cream);
+  padding: 4rem 0;
+}
+
+.contactBox {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contactBox h2 {
+  font-size: 2.2rem;
+  color: var(--brown-dark);
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+}
+
+.contactBox p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--brown-medium);
+  margin-bottom: 2rem;
+}
+
+.contactButton {
+  display: inline-block;
+  background-color: var(--brown-medium);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+}
+
+.contactButton:hover {
+  background-color: var(--brown-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .dicasGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .categoriaTitle {
+    font-size: 1.7rem;
+  }
+
+  .faqQuestion {
+    font-size: 1.05rem;
+    padding: 1.2rem;
+  }
+
+  .faqAnswer {
+    padding: 1.2rem;
+  }
+
+  .emergencyBox {
+    padding: 2rem;
+  }
+
+  .emergencyBox h2 {
+    font-size: 1.7rem;
+  }
+
+  .contactBox h2 {
+    font-size: 1.8rem;
+  }
+
+  .contactBox p {
+    font-size: 1.1rem;
+  }
+
+  .contactButton {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .dicaCard {
+    padding: 1.5rem;
+  }
+
+  .dicaCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .dicaCard p,
+  .faqAnswer p {
+    font-size: 1rem;
+  }
+
+  .categoriaTitle {
+    font-size: 1.5rem;
+  }
+
+  .faqQuestion {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .faqIcon {
+    font-size: 1.3rem;
+  }
+
+  .emergencyBox {
+    padding: 1.5rem;
+  }
+
+  .emergencyBox h2 {
+    font-size: 1.5rem;
+  }
+
+  .emergencyBox p {
+    font-size: 1rem;
+  }
+
+  .contactBox h2 {
+    font-size: 1.6rem;
+  }
+
+  .contactBox p {
+    font-size: 1rem;
+  }
+
+  .contactButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
