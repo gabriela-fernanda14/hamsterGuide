@@ -19,6 +19,9 @@ export default function Cuidados() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -280,6 +283,11 @@ export default function Cuidados() {
             </section>
 
 
+            {showBackToTop && (
+                <button className={styles.backToTop} onClick={scrollToTop}>
+                    ↑
+                </button>
+            )}
         </main>
     );
 }
