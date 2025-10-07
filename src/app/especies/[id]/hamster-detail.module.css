@@ -1,0 +1,451 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--off-white), white);
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: var(--brown-medium);
+}
+
+.spinner {
+  font-size: 4rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.notFound {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--brown-medium);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--brown-medium);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.backLink:hover {
+  color: var(--brown-dark);
+  background-color: var(--cream);
+  transform: translateX(-5px);
+}
+
+.backButton {
+  display: inline-block;
+  background-color: var(--brown-medium);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.backButton:hover {
+  background-color: var(--brown-dark);
+  transform: scale(1.05);
+}
+
+.hamsterDetail {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  background: linear-gradient(135deg, white, var(--cream), white);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 
+    0 10px 40px rgba(139, 69, 19, 0.1),
+    0 2px 10px rgba(139, 69, 19, 0.05);
+  border: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.imageSection {
+  width: 420px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 2rem;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 420px;
+  background: linear-gradient(135deg, var(--cream), var(--off-white));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--brown-light);
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(139, 69, 19, 0.15);
+  transition: all 0.3s ease;
+}
+
+.imagePlaceholder:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(139, 69, 19, 0.2);
+  border-color: var(--brown-medium);
+}
+
+.imagePlaceholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderIcon {
+  font-size: 8rem;
+  color: var(--brown-medium);
+  opacity: 0.6;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.infoSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.hamsterName {
+  font-size: 3rem;
+  color: var(--brown-dark);
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  background: linear-gradient(135deg, var(--brown-dark), var(--brown-medium));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.scientificName {
+  font-style: italic;
+  color: var(--brown-medium);
+  font-size: 1.3rem;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.85;
+  font-weight: 500;
+}
+
+.infoRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.infoCard {
+  background: linear-gradient(135deg, white, var(--cream));
+  padding: 1.3rem 1.8rem;
+  border-radius: 16px;
+  border: 2px solid var(--brown-light);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.08);
+  min-height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.infoCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(139, 69, 19, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.infoCard:hover::before {
+  left: 100%;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.15);
+  border-color: var(--brown-medium);
+  background: linear-gradient(135deg, var(--cream), white);
+}
+
+.infoCard h4 {
+  color: var(--brown-dark);
+  margin: 0 0 0.6rem 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.infoCard p {
+  color: var(--brown-medium);
+  line-height: 1.5;
+  font-size: 1.05rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.largeCard {
+  background: linear-gradient(to right, var(--off-white), white, var(--cream));
+  padding: 1.8rem 2rem;
+  border-radius: 18px;
+  border-left: 5px solid var(--brown-medium);
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.12);
+  transition: all 0.3s ease;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.largeCard:hover {
+  transform: translateY(-5px) translateX(3px);
+  box-shadow: 0 10px 35px rgba(139, 69, 19, 0.2);
+  border-left-color: var(--brown-dark);
+  border-left-width: 6px;
+  background: linear-gradient(to right, white, var(--cream), var(--off-white));
+}
+
+.largeCard h4 {
+  color: var(--brown-dark);
+  margin: 0 0 0.8rem 0;
+  font-size: 1.05rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.largeCard p {
+  color: var(--brown-medium);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.fullWidthCard {
+  background: linear-gradient(135deg, var(--cream), var(--off-white), var(--cream));
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  border: 3px solid var(--brown-light);
+  box-shadow: 0 6px 25px rgba(139, 69, 19, 0.15);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.fullWidthCard::after {
+  content: '✨';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  opacity: 0.1;
+}
+
+.fullWidthCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(139, 69, 19, 0.25);
+  border-color: var(--brown-medium);
+  background: linear-gradient(135deg, white, var(--cream), white);
+}
+
+.fullWidthCard h4 {
+  color: var(--brown-dark);
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fullWidthCard p {
+  color: var(--brown-medium);
+  line-height: 1.8;
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.lifeCard {
+  background: linear-gradient(90deg, var(--brown-medium), var(--brown-dark));
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(139, 69, 19, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.lifeCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 40px rgba(139, 69, 19, 0.4);
+}
+
+.lifeCard h4 {
+  color: white;
+  margin: 0 0 0.6rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lifeCard p {
+  color: var(--cream);
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 2rem;
+  }
+  
+  .hamsterDetail {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .imageSection {
+    width: 350px;
+  }
+  
+  .imagePlaceholder {
+    height: 350px;
+  }
+  
+  .hamsterName {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .hamsterDetail {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .imageSection {
+    width: 100%;
+    position: static;
+  }
+  
+  .imagePlaceholder {
+    height: 300px;
+  }
+  
+  .placeholderIcon {
+    font-size: 5rem;
+  }
+  
+  .hamsterName {
+    font-size: 2.2rem;
+  }
+  
+  .scientificName {
+    font-size: 1.1rem;
+  }
+  
+  .infoRow {
+    grid-template-columns: 1fr;
+  }
+  
+  .infoCard,
+  .largeCard {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamsterDetail {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .hamsterName {
+    font-size: 1.8rem;
+  }
+  
+  .scientificName {
+    font-size: 1rem;
+  }
+  
+  .imagePlaceholder {
+    height: 250px;
+  }
+  
+  .infoCard {
+    padding: 1rem 1.2rem;
+  }
+  
+  .largeCard,
+  .fullWidthCard {
+    padding: 1.3rem 1.5rem;
+  }
+  
+  .lifeCard {
+    padding: 1.2rem 1.5rem;
+  }
+  
+  .infoCard h4,
+  .largeCard h4,
+  .fullWidthCard h4,
+  .lifeCard h4 {
+    font-size: 0.9rem;
+  }
+  
+  .infoCard p,
+  .largeCard p,
+  .fullWidthCard p,
+  .lifeCard p {
+    font-size: 0.95rem;
+  }
+}
