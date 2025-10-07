@@ -1,128 +1,226 @@
 # 🐹 Hamster Guide
 
-> Um guia completo e interativo para cuidados essenciais de hamsters, desenvolvido com Next.js
+> Um guia completo e interativo para cuidados essenciais de hamsters, desenvolvido com Next.js e React
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
-[![CSS Modules](https://img.shields.io/badge/CSS-Modules-green)](https://github.com/css-modules/css-modules)
 [![Formspree](https://img.shields.io/badge/Forms-Formspree-orange)](https://formspree.io/)
 
 ## 📋 Sobre o Projeto
 
-O **Hamster Guide** é uma aplicação web educativa que oferece informações detalhadas sobre cuidados essenciais para hamsters. O projeto foi desenvolvido com foco em experiência do usuário, design responsivo e conteúdo de qualidade para tutores de hamsters.
+O **Hamster Guide** é uma aplicação web educativa que oferece informações detalhadas sobre cuidados essenciais para hamsters. O projeto foi desenvolvido com foco na experiência do usuário, design responsivo e conteúdo de qualidade para tutores de hamsters.
 
 ### ✨ Características Principais
 
 - 🎨 **Design Responsivo** - Interface adaptável para todos os dispositivos
 - 🌈 **Paleta de Cores Harmoniosa** - Tons de marrom que remetem ao ambiente natural
-- 📱 **Mobile First** - Otimizado para dispositivos móveis
+- 📱 **Mobile** - Otimizado para dispositivos móveis
 - 🔄 **Navegação Fluida** - Scroll suave e transições elegantes
 - 📝 **Formulário Funcional** - Integração com Formspree para contato
 - 🎯 **Conteúdo Estruturado** - Informações organizadas por categorias
+- 🐹 **Espécies Dinâmicas** - Integração com API backend para informações de espécies
+- ❓ **FAQ Interativo** - Sistema de perguntas e respostas expansível
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Frontend:**
+### Frontend
 
-  - [Next.js 14](https://nextjs.org/) - Framework React para produção
-  - [React 18](https://reactjs.org/) - Biblioteca JavaScript para interfaces
-  - CSS Modules - Estilização modular e isolada
-  - CSS Variables - Sistema de cores consistente
+- [Next.js 14](https://nextjs.org/) - Framework React com App Router
+- [React 18](https://reactjs.org/) - Biblioteca JavaScript para interfaces
+- CSS Modules - Estilização modular e isolada
+- CSS Variables - Sistema de cores consistente
 
-- **Formulários:**
+### Backend
 
-  - [@formspree/react](https://formspree.io/react) - Gerenciamento de formulários
+- **API REST** - [HamsterGuide-Back](https://github.com/gabriela-fernanda14/HamsterGuide-Back.git)
+- Fornece dados das espécies de hamsters
+- Necessário para funcionamento da seção "Espécies"
 
-- **Desenvolvimento:**
-  - ESLint - Linting e qualidade de código
-  - Git - Controle de versão
+### Integrações
 
+- [@formspree/react](https://formspree.io/react) - Gerenciamento de formulários
+
+### Ferramentas de Desenvolvimento
+
+- Git - Controle de versão
+- Vercel - Hospedagem e deploy contínuo
 ## 📦 Estrutura do Projeto
 
 ```
 hamsterGuide/
 ├── public/                    # Arquivos estáticos
-│   ├── next.svg
-│   ├── vercel.svg
-│   └── ...
 ├── src/
-│   ├── app/                   # App Router (Next.js 13+)
-│   │   ├── cuidados/         # Página de cuidados
+│   ├── app/                   # App Router (Next.js 14)
+│   │   ├── cuidados/         # Página de cuidados básicos
 │   │   │   ├── page.jsx
 │   │   │   └── cuidados.module.css
+│   │   ├── especies/         # Página de espécies
+│   │   │   ├── [id]/         # Páginas dinâmicas de detalhes
+│   │   │   │   ├── page.jsx
+│   │   │   │   └── hamster-detail.module.css
+│   │   │   ├── page.jsx
+│   │   │   └── especies.module.css
+│   │   ├── habitat/          # Página sobre habitat ideal
+│   │   │   ├── page.jsx
+│   │   │   └── habitat.module.css
+│   │   ├── dicas/            # Página de dicas e FAQ
+│   │   │   ├── page.jsx
+│   │   │   └── dicas.module.css
+│   │   ├── not-found.jsx     # Página 404 personalizada
 │   │   ├── globals.css       # Estilos globais
 │   │   ├── layout.js         # Layout principal
-│   │   ├── page.jsx          # Página inicial
+│   │   ├── page.jsx          # Página inicial (Home)
 │   │   └── page.module.css   # Estilos da home
 │   └── components/           # Componentes reutilizáveis
 │       ├── header/
-│       ├── footer/
-│       └── navigation/
+│       │   ├── index.jsx
+│       │   └── header.module.css
+│       └── footer/
+│           ├── index.jsx
+│           └── footer.module.css
+├── eslint.config.mjs
+├── jsconfig.json
+├── next.config.mjs
 ├── package.json
 └── README.md
 ```
 
 ## 🎯 Funcionalidades
 
-### 🏠 Página Inicial
+### 🏠 Página Inicial (Home)
 
 - Hero section com apresentação do projeto
-- Cards informativos sobre tópicos principais
-- Formulário de contato integrado
-- Links de navegação para seções específicas
+- Cards informativos com direcionamento para habitat e dicas
+- Formulário de contato integrado com Formspree
+- Links de navegação para todas as seções
+- Design responsivo com animações suaves
 
-### 🩺 Página de Cuidados
+### 🩺 Página de Cuidados Básicos
 
 - **4 Pilares dos Cuidados:**
-
   - 🍎 Alimentação Adequada
-  - 🛁 Higiene
+  - 🛁 Higiene e Limpeza
   - ❤️ Cuidados de Saúde
-  - ⏰ Rotina de Cuidados
+  - ⏰ Rotina de Cuidados Diários
 
 - **Seções Detalhadas:**
-
   - Informações específicas sobre cada tópico
   - Listas de recomendações práticas
   - Alimentos proibidos destacados
   - Timeline de rotina diária
+  - Sinais de alerta e quando procurar veterinário
+  - Botão "Voltar ao topo" em scroll
 
-- **Sinais de Alerta:**
-  - Identificação de problemas de saúde
-  - Descrições detalhadas de sintomas
-  - Orientações para busca de ajuda veterinária
+### 🐹 Página de Espécies
 
-## 🎨 Design System
+- **Listagem de Espécies:**
+  - Cards visuais com informações básicas
+  - Hamster Sírio, Anão Russo, Roborovski, etc.
+  - Links para páginas de detalhes individuais
+  - Design em grid responsivo (2 cards por linha)
 
-### Paleta de Cores
+- **Páginas de Detalhes (Dinâmicas):**
+  - Layout: Imagem à esquerda, informações à direita
+  - Nome científico em destaque
+  - Cards organizados por categoria:
+    - Origem e Habitat (linha 1)
+    - Tamanho e Peso (linha 2)
+    - Alimentação e Características (linha 3)
+    - Curiosidades (linha 4)
+    - Longevidade (destaque final)
+  - Roteamento dinâmico por nome do hamster
+  - Design com gradientes e animações hover
 
-```css
-:root {
-  --brown-dark: #5d4037; /* Textos principais */
-  --brown-medium: #8d6e63; /* Botões e destaques */
-  --brown-light: #d7ccc8; /* Fundos suaves */
-  --off-white: #f5f3f0; /* Fundo principal */
-  --cream: #efebe9; /* Seções alternadas */
-}
-```
+### 🏠 Página de Habitat
 
-### Tipografia
+- **Tipos de Gaiolas:**
+  - Tamanhos mínimos recomendados
+  - Aquários vs. Gaiolas de arame
+  - O que evitar
 
-- **Títulos:** Font-weight bold, tamanhos responsivos
-- **Corpo:** Line-height 1.6 para melhor legibilidade
-- **Font Stack:** Sistema nativo para performance otimizada
+- **Brinquedos e Enriquecimento:**
+  - Roda de exercício (especificações)
+  - Casa e esconderijos
+  - Túneis, plataformas e brinquedos
+  - Banheira de areia
+
+- **Temperatura e Iluminação:**
+  - Faixa ideal de temperatura (18-24°C)
+  - Localização adequada da gaiola
+  - Ciclo de luz/escuridão
+
+- **Organização do Espaço:**
+  - Substrato adequado
+  - Distribuição de itens
+  - Checklist completo
+
+- **Navegação:**
+  - Cards clicáveis para scroll direto às seções
+  - Botão "Voltar ao topo"
+
+### 💡 Página de Dicas/FAQ
+
+- **Dicas Práticas (6 cards):**
+  - Domesticação gradual
+  - Redução de odor
+  - Viagens e férias
+  - Enriquecimento barato
+  - Sinais de felicidade
+  - Quando procurar veterinário
+
+- **FAQ Interativo:**
+  - 25+ perguntas organizadas em 5 categorias:
+    - Comportamento (5 perguntas)
+    - Saúde (5 perguntas)
+    - Alimentação (5 perguntas)
+    - Convivência (5 perguntas)
+    - Emergências (5 perguntas)
+  - Sistema expansível com `<details>` HTML nativo
+  - Sem JavaScript complexo, apenas CSS
+  - Ícones + e − automáticos
+
+- **Caixa de Emergência:**
+  - Informações sobre situações graves
+  - Orientações rápidas
+
+- **Call-to-Action:**
+  - Botão para formulário de contato
+  - Link direto para seção de contato na home
+
+### 🚫 Página 404 Personalizada
+
+- Design consistente com o resto do site
+- Mensagem amigável
+- Botão para voltar à página inicial
+- Estilização em tons marrons
 
 ## 🚀 Como Executar
 
 ### Pré-requisitos
 
-- Node.js 18+
+- Node.js 18+ instalado
 - npm ou yarn
+- **Backend rodando** (obrigatório para a página de Espécies)
 
-### Instalação
+### 1️⃣ Configurar o Backend
+
+⚠️ **Importante:** O projeto depende da API backend para a funcionalidade de espécies. Primeiro, configure o backend:
 
 ```bash
-# Clone o repositório
+# Clone o repositório do backend
+git clone https://github.com/gabriela-fernanda14/HamsterGuide-Back.git
+
+# Entre no diretório do backend
+cd HamsterGuide-Back
+
+# Siga as instruções de instalação do README do backend
+# O backend deve estar rodando em http://localhost:4000
+```
+
+### 2️⃣ Configurar o Frontend
+
+```bash
+# Clone este repositório
 git clone https://github.com/gabriela-fernanda14/hamsterGuide.git
 
 # Entre no diretório
@@ -134,10 +232,12 @@ npm install
 yarn install
 ```
 
-### Desenvolvimento
+### 3️⃣ Executar em Desenvolvimento
 
 ```bash
-# Inicie o servidor de desenvolvimento
+# Certifique-se de que o backend está rodando em http://localhost:4000
+
+# Inicie o servidor de desenvolvimento do frontend
 npm run dev
 # ou
 yarn dev
@@ -145,7 +245,7 @@ yarn dev
 
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-### Build para Produção
+### 4️⃣ Build para Produção
 
 ```bash
 # Gere a build otimizada
@@ -159,24 +259,38 @@ npm start
 yarn start
 ```
 
-## 📱 Responsividade
+### 📝 Observações
 
-O projeto foi desenvolvido com abordagem **Mobile First**, garantindo uma experiência otimizada em:
+- A página de **Espécies** requer que o backend esteja rodando
+- Se o backend não estiver disponível, a página de espécies mostrará estado de loading
+- Todas as outras páginas funcionam independentemente do backend
+- API endpoint padrão: `http://localhost:4000/hamsters/`
+
+### P
+
+### Tipografia
+
+- **Títulos:** Font-weight 600-700, tamanhos responsivos (2rem - 3rem)
+- **Corpo:** Line-height 1.6-1.8 para melhor legibilidade
+- **Font Stack:** Sistema nativo para performance otimizada
+
+### Componentes
+
+- **Cards:** Border-radius 10-15px, hover com translateY
+- **Botões:** Padding 1rem 2rem, transições suaves
+- **Formulários:** Inputs com border-radius 8px, focus states
+- **FAQ:** Sistema `<details>` HTML nativo, sem JavaScript
+
+## � Links do Projeto
+
+- **Frontend:** [https://github.com/gabriela-fernanda14/hamsterGuide](https://github.com/gabriela-fernanda14/hamsterGuide)
+- **Backend:** [https://github.com/gabriela-fernanda14/HamsterGuide-Back](https://github.com/gabriela-fernanda14/HamsterGuide-Back)
+
+O projeto foi desenvolvido garantindo uma experiência otimizada em:
 
 - 📱 **Mobile** (< 480px)
 - 📱 **Tablet** (481px - 768px)
 - 💻 **Desktop** (> 768px)
-
-### Breakpoints Principais
-
-```css
-@media (max-width: 768px) {
-  /* Tablet e mobile */
-}
-@media (max-width: 480px) {
-  /* Mobile */
-}
-```
 
 ## 🔗 Navegação
 
@@ -190,20 +304,9 @@ O projeto foi desenvolvido com abordagem **Mobile First**, garantindo uma experi
 
 Integração com **Formspree** para processamento seguro de formulários:
 
-- ✅ Validação client-side
 - 📧 Envio por email automático
 - 🎯 Feedback visual para o usuário
-- 🔒 Proteção contra spam
 
-## 🤝 Contribuindo
-
-Contribuições são sempre bem-vindas! Para contribuir:
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
 
 ## 👨‍💻 Desenvolvedor
 
