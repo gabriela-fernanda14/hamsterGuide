@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.contactSection}>
+      <section id="contato" className={styles.contactSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Entre em Contato</h2>
           <p className={styles.contactDescription}>
