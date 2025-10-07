@@ -245,43 +245,12 @@ yarn dev
 
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-### 4️⃣ Build para Produção
-
-```bash
-# Gere a build otimizada
-npm run build
-# ou
-yarn build
-
-# Inicie o servidor de produção
-npm start
-# ou
-yarn start
-```
-
 ### 📝 Observações
 
 - A página de **Espécies** requer que o backend esteja rodando
-- Se o backend não estiver disponível, a página de espécies mostrará estado de loading
+- Se o backend não estiver disponível, a página de espécies mostrará estado de loading e erro
 - Todas as outras páginas funcionam independentemente do backend
 - API endpoint padrão: `http://localhost:4000/hamsters/`
-
-### P
-
-### Tipografia
-
-- **Títulos:** Font-weight 600-700, tamanhos responsivos (2rem - 3rem)
-- **Corpo:** Line-height 1.6-1.8 para melhor legibilidade
-- **Font Stack:** Sistema nativo para performance otimizada
-
-### Componentes
-
-- **Cards:** Border-radius 10-15px, hover com translateY
-- **Botões:** Padding 1rem 2rem, transições suaves
-- **Formulários:** Inputs com border-radius 8px, focus states
-- **FAQ:** Sistema `<details>` HTML nativo, sem JavaScript
-
-## � Links do Projeto
 
 - **Frontend:** [https://github.com/gabriela-fernanda14/hamsterGuide](https://github.com/gabriela-fernanda14/hamsterGuide)
 - **Backend:** [https://github.com/gabriela-fernanda14/HamsterGuide-Back](https://github.com/gabriela-fernanda14/HamsterGuide-Back)

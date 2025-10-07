@@ -11,7 +11,7 @@ export default function Especies() {
   useEffect(() => {
     const fetchHamsters = async () => {
       try {
-        const response = await fetch("http://localhost:4000/hamsters/");
+        const response = await fetch("http://localhost:4000/hamsters");
         const data = await response.json();
         setHamsters(data);
       } catch (error) {

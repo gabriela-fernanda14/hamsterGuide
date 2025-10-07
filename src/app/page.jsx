@@ -87,7 +87,7 @@ export default function Home() {
         <div className={styles.heroRight}>
           <div className={styles.imagePlaceholder}>
             <Image
-              src="/hamster-hero.jpg"
+              src="/images/home.png"
               alt="Hamster garra"
               width={300}
               height={300}
